@@ -6,6 +6,7 @@ vault server -dev (After running vault server in DEV mode please open a new Bash
 
 2.You should open a new Bash terminal:
 
+cd vault_1.9.0_windows_amd64 (cd into Directory where you installed vault software)
 export VAULT_ADDR="http://127.0.0.1:8200"
 export PATH=$PATH:/c/Users/Asus/vault_1.9.0_windows_amd64/
 vault status
@@ -29,4 +30,3 @@ vault kv get secret/creds
 vault kv get -version=3 secret/creds
 vault kv get -version=1 secret/creds
 vault kv get secret/creds
-vault kv destroy secret/creds
